@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>婚礼伴手礼 商务伴手礼 婚礼喜糖 定制伴手礼 喜糖 - 婚礼喜糖伴手礼,婚礼成品伴手礼,定制婚礼伴手礼-湖南糖生糖太电子商务有限公司-</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <script src="jquery.min.js"></script>
+    <link rel="icon" href="img/1488449698111.ico">
+</head>
+
+<body>
+    <!-- banner全屏滚动 -->
+    <div class="screen-banner">
+        <ul id="btn" class="btn">
+            <li class="active">
+                <span class="span1"></span>
+            </li>
+            <li>
+                <span class="span1">产品</span>
+            </li>
+            <li>
+                <span class="span1">SugarOnly·定制</span>
+            </li>
+            <li>
+                <span class="span1">设计团队</span>
+            </li>
+            <li>
+                <span class="span1"></span>
+            </li>
+            <li>
+                <span class="span1">新闻</span>
+            </li>
+            <li>
+                <span class="span1"> 联系我们</span>
+            </li>
+        </ul>
+        <div class="all-screen">
+            <div class="screen-one one">
+                <div class="banner">
+                    <div class="logo">
+                        <img src="img/1487915460489.png" alt="">
+                    </div>
+                    <div class="mask">
+                        <a href="" id="menu">
+                        </a>
+                    </div>
+                    <ul id="ul">
+                        <li class="li1 now">
+                            <div class="img">
+                                <img src="img/1531114218294.jpg" />
+                            </div>
+                        </li>
+                        <li class="li2">
+                            <div class="img">
+                                <img src="img/152101150178.jpg" />
+                            </div>
+
+                        </li>
+                        <li class="li3">
+                            <div class="img">
+                                <img src="img/1505722053291.jpg" />
+                            </div>
+
+                        </li>
+                        <li class="li4">
+                            <div class="img">
+                                <img src="img/1516177811365.jpg" />
+                            </div>
+                        </li>
+                        <li class="li5">
+                            <div class="img">
+                                <img src="img/1513322483197.jpg" />
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="javascript:;" class="btn btnl"><i class="icon iconfont icon-xiangzuo"></i></a>
+                    <a href="javascript:;" class="btn btnr"> <i class="icon iconfont icon-xiangyou"></i> </a>
+                </div>
+            </div>
+            <div class="screen-one two">
+                 <div class="inner">
+                     <div class="tit">
+                         <p class="bigtit">
+                                产品
+                         </p>
+                         <p class="subtit">
+                                Products
+                         </p>
+                         <div class="nav">
+                                <ul>
+                                    <li>婚礼伴手礼</li>
+                                    <li>/</li>
+                                    <li>桌礼</li>
+                                    <li>/</li>
+                                    <li>季节限定</li>
+                                    <li>/</li>
+                                    <li>糖与她</li>
+                                    <li>/</li>
+                                    <li>喜糖购</li>
+                                </ul>
+                          </div>
+                     </div>
+                 </div>
+            </div>
+            <div class="screen-one" style="background: blue"></div>
+            <div class="screen-one" style="background: gainsboro"></div>
+        </div>
+    </div>
+    <script src="js/全屏滚动.js"></script>
+    <script>
+        /* 遮罩层 */
+
+        /* banner轮播 */
+        $(".banner ul li").eq(0).show();
+        var num = 0;
+        $(".btnl").click(function () {
+            num--
+            if (num < 0) {
+                num = $(".banner ul li").length - 1
+            }
+            $(".banner ul li").eq(num).show().siblings().hide()
+        })
+        $(".btnr").click(function () {
+            num++
+            if (num > $(".banner ul li").length - 1) {
+                num = 0
+            }
+            $(".banner ul li").eq(num).show().siblings().hide()
+        })
+        timer = setInterval(playNext, 3000);
+        function playNext() {
+            num--
+            if (num < 0) {
+                num = $(".banner ul li").length - 1
+            }
+            $(".banner ul li").eq(num).show().siblings().hide()
+        }
+    </script>
+</body>
+
+</html>
